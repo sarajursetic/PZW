@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS objekti</title>
+</head>
+<body>
+    <h1>Javascript objekti</h1>
+
+<p id="id"></p>
+<p id="id1"></p>
+<p id="id2"></p>
+
+<h1>Osoba</h1>
+<p id="osoba"></p>
+
+    <script>
+
+        //Kreiranje objekta:
+        const car = {type:"Fiat", model:"500", color:"white"};
+
+        //Ispiši svojstvo objekta car:
+        document.getElementById("id").innerHTML = "Marka automobila je: " + car.type;
+        document.getElementById("id1").innerHTML = "Model automobila je: " + car.model;
+        document.getElementById("id2").innerHTML = "Boja automobila je: " + car.color;
+
+
+        //OSOBA
+        const person = {
+            firstName: "John",
+            lastName: "Doe",
+            id: 5566,
+            fullName: function(){
+                return this.firstName + " " + this.lastName;
+            }
+        };
+
+        document.getElementById("osoba").innerHTML = person.fullName();
+    </script>
+</body>
+</html>
