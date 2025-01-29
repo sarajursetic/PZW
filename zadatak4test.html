@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vrijeme</title>
+    
+</head>
+<body>
+    <h1>Zadatak vježba</h1>
+    <span id="test"></span>
+
+    <script>
+      function addZero(i) {
+  if (i < 10) {i = "0" + i}
+  return i;
+}
+
+const d = new Date();
+let h = 17;
+let time = h;
+document.getElementById("test").innerHTML = time;
+
+if (time <= 10){
+    alert("Dobro jutro! Nadam se da ste dobro spavali!");
+}
+else if (time => 11 && time <= 18){
+    alert("Dobar dan! Spremni smo za nove zadatke.")
+}
+else if (time >= 19){
+    alert ("Dobra večer. Vrijeme je za odmor")
+}
+</script>
+
+</body>
+</html>
