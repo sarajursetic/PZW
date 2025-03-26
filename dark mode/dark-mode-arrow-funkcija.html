@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS ARROW FUNKCIJA</title>
+    <style>
+        body {
+          padding: 25px;
+          background-color: white;
+          color: black;
+          font-size: 25px;
+        }
+        
+        .dark-mode {
+          background-color: black;
+          color: white;
+        }
+
+        button{
+            background-color: rgba(245, 222, 179, 0);
+            border: none;
+            width: 45px;
+            height: auto;
+        }
+        </style>
+</head>
+<body>
+    <h1>JS ARROW FUNKCIJA</h1>
+    <button onclick=darkMode() id="changeImageButton">
+        <img src="toggle-off-solid.svg" id="buttonImage" src="image1.jpg" alt="Image" >
+    </button>
+<script>
+ darkMode = () => 
+    {
+        var element = document.body;
+       element.classList.toggle("dark-mode");
+    };
+
+
+const toggleImage = () => {
+    const image = document.getElementById("buttonImage");
+
+    image.src = image.src.includes("toggle-off-solid.svg") ? "toggle-on-solid.svg" : "toggle-off-solid.svg";
+};
+
+document.getElementById("changeImageButton").addEventListener("click", () => 
+{
+    toggleImage(); 
+}
+);
+    </script>
+</body>
+</html>
