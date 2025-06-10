@@ -1,0 +1,36 @@
+*{
+          margin: 0;
+          padding: 0;
+          box-sizing: border-box;
+          overflow: hidden;
+          
+}
+
+body{
+          min-height: 100vh;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          background: linear-gradient(0deg, rgba(250, 252, 252, 1) 8%, rgba(87, 177, 199, 1) 100%);
+          padding: 50px 20px 50px 20px;
+}
+
+#game {
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    background-color: #87CEEB;  /* Sky blue background for areas where game isn't rendered */
+    max-width: 100%;
+    height: auto;
+}
+
+/* Responsive adjustments for very small screens */
+@media (max-width: 1000px) {
+    body {
+        padding: 30px 10px;
+    }
+    
+    #game {
+        width: 100%;
+        max-width: 960px;
+    }
+}
